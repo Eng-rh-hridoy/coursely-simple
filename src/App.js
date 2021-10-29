@@ -1,23 +1,20 @@
 import logo from './logo.png';
 import './App.css';
+import Courses from './AllCourses/Courses';
+import FakeData from './Data/Data';
 
 function App() {
+  const data = FakeData;
+  console.log(data);
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        <img className = "logo" src={logo} alt="logo" />
       </header>
+      <div>
+        <h2>this is title</h2>
+      </div>
+      <Courses></Courses>
     </div>
   );
 }
