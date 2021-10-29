@@ -9,3 +9,8 @@ header{
   height: 100px;
   width: 200px;
 }
+.course-list{
+  margin: 30px 50px;
+  padding: 10px 30px;
+  width: 70%;
+}
