@@ -14,3 +14,6 @@ header{
   padding: 10px 30px;
   width: 70%;
 }
+.course-cart-container{
+  display: flex;
+}

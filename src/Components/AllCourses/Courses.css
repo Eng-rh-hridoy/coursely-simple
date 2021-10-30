@@ -3,18 +3,18 @@
     justify-content: center;
     align-items: center;
     height: 300px;
-    background-color: #1C1D1F;
+    background-color: #fe924f;
     color: white;
     margin: 30px 0;
+    box-shadow: 7px 5px 12px gray;
 }
 .course-details {
     width: 60%;
     margin: 35px;
 }
-.check-out {
-    padding: 60px 0 0 0;
-    width: 30%;
+.check-out{
+    margin-top: 20px;
 }
-button{
-    font-weight: 600;
+.check-out h3{
+    margin-top: 20px;
 }

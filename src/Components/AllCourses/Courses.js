@@ -1,10 +1,10 @@
 import React from 'react';
 import './Courses.css';
-import '../../node_modules/bootstrap/dist/css/bootstrap.min.css';
+import '../../../node_modules/bootstrap/dist/css/bootstrap.min.css';
 
 const Courses = (props) => {
-    console.log(props.data);
     const course = props.data;
+    const handelAddToCart = props.handelAddToCart;
     return (
         <div className = "course-container">
             <div className="course-details">
@@ -13,7 +13,8 @@ const Courses = (props) => {
             </div>
             <div className="check-out">
                 <img src={course.img} alt="" />
-                <button className = "btn btn-warning btn-lg fw-bold m-5">Add To Cart</button>
+                <h3>${course.price}</h3>
+                <button onClick = {()=>{handelAddToCart(course)}} className = "btn btn-warning btn-lg fw-bold">Add To Cart</button>
             </div>
         </div>
     );
